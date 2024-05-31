@@ -1,0 +1,54 @@
+:root {
+    --dark-background-color: #1F2937;
+    --hero-main-text: 48px #f9faf8;
+    --hero-secondary-text: 18px;
+    --hero-secondary-text-color: #E5E7EB;
+    --header-logo-text: 24px;
+    --header-logo-color: #f9faf8;
+    --button-color: #3882F6;
+    --information-header-text: 36px #1F2937;
+    --quote-section-background: #E5E7EB;
+    --quote-text: 36px light italic #1f2937;
+}
+
+
+/* style for the header*/
+
+header {
+    background-color: var(--dark-background-color);
+    margin: auto;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    
+}
+
+.headerLogoText{
+    font: var(--header-logo-text);
+    color: var(--header-logo-color);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+
+.secondaryText {
+    font-style: var(--hero-secondary-text);
+    color: var(--hero-secondary-text-color);
+}
+
+/*hero styling including color and font*/
+
+
+.heroContainer {
+    background-color: var(--dark-background-color);
+}
