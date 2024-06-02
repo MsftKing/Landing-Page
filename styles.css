@@ -1,6 +1,7 @@
 :root {
     --dark-background-color: #1F2937;
-    --hero-main-text: 48px #f9faf8;
+    --hero-main-text: 48px;
+    --hero-text-color: #f9faf8;
     --hero-secondary-text: 18px;
     --hero-secondary-text-color: #E5E7EB;
     --header-logo-text: 24px;
@@ -11,33 +12,49 @@
     --quote-text: 36px light italic #1f2937;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+}
+
 
 /* style for the header*/
 
 header {
     background-color: var(--dark-background-color);
-    margin: auto;
-    padding: auto;
     display: flex;
-    flex-direction: column;
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
 }
 
-ul {
-    list-style: none;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    position: relative;
-    
+/* Navigation styling */
+
+.navLinks {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.navLinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navLinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navLinks li a:hover {
+    opacity: 3%;
 }
 
 .headerLogoText{
     font: var(--header-logo-text);
     color: var(--header-logo-color);
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
+    cursor: pointer;
 
 }
 
@@ -51,4 +68,36 @@ ul {
 
 .heroContainer {
     background-color: var(--dark-background-color);
+    display: flex;
+    padding: 20px;
+    color: var(--hero-text-color);
+}
+
+.hero {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 0 0 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: var(--button-color);
+    font-family: "Roboto", sans-serif;
+    color: var(--hero-text-color);
+    border-radius: 10px;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
 }
