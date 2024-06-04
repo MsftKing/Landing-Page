@@ -17,7 +17,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif!important; 
     align-items: center;
    /* transition: all 0.3s ease 0s; */
 }
@@ -169,4 +169,43 @@ blockquote {
   .quoteAuthor {
     display: flex;
     margin-inline-start: auto;
+  }
+
+  /*Call to action*/
+
+  div.callToAction{
+    display: block;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  div.callBackground {
+    background-color: var(--button-color);
+    width: 90vw;
+    max-height: 40vh;
+    margin: 5rem;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+
+  h1.callHeader{
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  p.callText {
+    font-size: 18px;
+  }
+
+  button.callButton {
+    display: flex;
+    margin-inline-start: auto;
+    justify-content: space-around;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--button-color);
+    border-color: 5px #fff;
+    min-width: fit-content;
   }
