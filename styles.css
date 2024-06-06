@@ -135,6 +135,13 @@ div.informationText {
     justify-content: space-evenly;
 }
 
+p.text {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    padding: auto;
+}
+
 div.imageBorder{
     border: solid 2px #3882F6;
     min-width: 100px;
@@ -174,12 +181,14 @@ blockquote {
   /*Call to action*/
 
   div.callToAction{
-    display: block;
+    display: grid;
     align-items: center;
     flex-direction: column;
   }
   
   div.callBackground {
+    display: grid;
+    grid-auto-flow: row;
     background-color: var(--button-color);
     width: 90vw;
     max-height: 40vh;
@@ -198,7 +207,7 @@ blockquote {
   }
 
   button.callButton {
-    display: flex;
+    display: grid;
     margin-inline-start: auto;
     justify-content: space-around;
     padding: 10px 20px;
@@ -208,4 +217,19 @@ blockquote {
     background-color: var(--button-color);
     border-color: 5px #fff;
     min-width: fit-content;
+  }
+
+  /* footer */
+
+  footer.footer {
+    background-color: var(--dark-background-color);
+    min-height: 5rem;
+  }
+
+  p.footerText  {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 2rem;
+    padding: 2rem;
   }
